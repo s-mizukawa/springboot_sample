@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>input page</title>
+  </head>
+
+  <body>
+    <h1>input here.</h1>
+    <!--
+        th:action   ＝　遷移先のページ
+        th:object   ＝　formの中身を格納するクラス
+        th:field    ＝　objectで指定したクラスに追加するフィールド名
+    -->
+    <form action="#" th:action="@{/confirm}" th:object="${message}" method="POST">
+      <p>input message below.</p>
+      <input type="text" th:field="*{text}" />
+      <button type="submit">OK!</button>
+    </form>
+  </body>
+</html>

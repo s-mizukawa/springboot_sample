@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>confirm page</title>
+  </head>
+
+  <body>
+    <h1>this is confirm page</h1>
+    <!-- 
+        th:text でそのタグ内に記載するテキストを指定できる。
+        ${オブジェクト名.フィールド名}でオブジェクトの中身を自由に配置できる。
+    -->
+    <p th:text="'input message:' + ${message.text}" />
+  </body>
+</html>
